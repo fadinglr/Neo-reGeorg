@@ -1,5 +1,35 @@
 # Change Log
 
+### v2.6.0
+    Client: Add the `--write-interval` parameter to adjust the FORWARD request interval
+    Client: Readjust `--read-interval` default value is 300
+    Clinet: Add `--target` parameter to realize port forwarding function
+
+### v2.5.1
+    Client: When the Session expires, automatically append cookies to continue running
+    Server: Fix jsp(x) find java.nio.ByteBuffer.clear() method problem in some low jdk versions
+
+### v2.5.0
+    Client: When detecting that the socks connection is closed, the session is automatically ended, reducing a lot of request traffic
+    Client: Optimized the output of exception information, and has been able to capture exceptions caused by high concurrency
+    Client: The document adds operating suggestions for the Mac OSX environment
+    Client: Adjust the default settings, the network traffic is reduced by about 46%
+    Client: Fix `--file` read complex file encoding escape problem 
+
+### v2.4.1
+    Added session expiration reminder
+    Adjust `askGeorg` detection request, timeout is 10 seconds
+
+### v2.4.0
+    Fix non-apache environment BUG [php]
+
+### v2.3.2
+    Fix `--local-dns` commit
+
+### v2.3.1
+    Fix the BUG in response to error messages in python3
+    Optimized the error message reminder
+
 ### v2.3.0
     jsp(x) Restore the `trimDirectiveWhitespaces` set version `tunnel_compatibility.jsp(x)` that is compatible with the lower version of jdk
     jsp(x) `response.getOutputStream()` replaced with ʻout.write()` to solve the performance and stability problems caused by error messages on websphere
